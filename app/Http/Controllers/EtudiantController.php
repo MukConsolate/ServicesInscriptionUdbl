@@ -26,4 +26,9 @@ class EtudiantController extends Controller
             'coordonnées de l\'étudiant' => $candidat
         ]);
     }
+
+    public function showEtudiants()
+    {
+        return Etudiant::all();
+    }
 }

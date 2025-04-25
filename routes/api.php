@@ -18,3 +18,4 @@ Route::get('/candidats/getResultat/{candidat}', [CandidatController::class, 'get
 
 Route::post('/etudiants/{candidat_id}', [EtudiantController::class, 'store']);
 
+Route::get('/etudiants', [EtudiantController::class, 'showEtudiants']);
